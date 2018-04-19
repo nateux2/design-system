@@ -112,7 +112,7 @@
     <app-drawer id="drawer" slot="drawer">            
       <app-header-layout has-scrolling-region>          
         <app-header class="nav-header" slot="header" fixed>
-          <a href="{{ site.baseurl }}/">
+          <a href="{{ site.baseurl }}">
             <div class="title">Fuse</div>
             <div class="subtitle">Design System</div> 
           </a>         
@@ -130,10 +130,10 @@
               {% endraw %} 
               <div class="collapse-content">
                     <ul>
-                    <li><a class="{% if page.url == '/' %}active{% endif %}"href="{{ site.baseurl }}/">Introduction</a></li>
-                     <li><a class="{% if page.url == '/design-tenets/' %}active{% endif %}"href="{{ site.baseurl }}/design-tenets/">Design tenets</a></li> 
-                    <li><a class="{% if page.url == '/whats-new/' %}active{% endif %}"href="{{ site.baseurl }}/whats-new/">What's new</a></li>
-                    <li><a class="{% if page.url == '/content-status/' %}active{% endif %}"href="{{ site.baseurl }}/content-status/">Content status</a></li>   
+                    <li><a class="{% if page.url == '/' %}active{% endif %}"href="{{ site.baseurl }}">Introduction</a></li>
+                     <li><a class="{% if page.url == '/design-tenets/' %}active{% endif %}"href="{{ site.baseurl }}design-tenets/">Design tenets</a></li> 
+                    <li><a class="{% if page.url == '/whats-new/' %}active{% endif %}"href="{{ site.baseurl }}whats-new/">What's new</a></li>
+                    <li><a class="{% if page.url == '/content-status/' %}active{% endif %}"href="{{ site.baseurl }}content-status/">Content status</a></li>   
                   </ul>  
               </div>
             </iron-collapse>
@@ -218,7 +218,7 @@
           <paper-icon-button icon="menu" drawer-toggle></paper-icon-button>
           <div main-title>{{ page.title }}</div> 
           <div id="search" class="search-form">            
-              <form action="{{ site.baseurl }}/search/" method="get" class="searchbox" id="search-box">              
+              <form action="{{ site.baseurl }}search/" method="get" class="searchbox" id="search-box">              
                 <input type="text" placeholder="Search" id="input" name="q">
                 <paper-icon-button icon="search" id="searchButton" onclick="toggleSearch()" class="searchbox-submit" noink></paper-icon-button>                
               </form>
@@ -231,7 +231,7 @@
   </app-drawer-layout>
 </template>
 <!-- build:js scripts/app.js -->
-<script src="{{ site.baseurl }}/scripts/app.js"></script>
+<script src="{{ site.baseurl }}scripts/app.js"></script>
 <!-- endbuild-->
 
 
